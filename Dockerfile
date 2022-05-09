@@ -27,5 +27,4 @@ RUN if [ "x${APT_MIRROR}" != "x" ]; then \
 EXPOSE 5900
 EXPOSE 8888
 
-HEALTHCHECK --interval=30s --timeout=5s CMD curl --fail http://127.0.0.1:6079/api/health
 ENTRYPOINT ["/startup.sh"]
